@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 This module defines the Square class.
 
@@ -22,4 +23,5 @@ class Square:
     >>> print(type(square_instance))
     <class '__main__.Square'>
     """
+
     pass

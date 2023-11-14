@@ -7,7 +7,6 @@ The Square class is a simple class representing a square.
 
 Example:
 
-
 >>> square_instance = Square()
 >>> print(type(square_instance))
 <class '__main__.Square'>
@@ -27,3 +26,4 @@ class Square:
     """
 
     pass
+

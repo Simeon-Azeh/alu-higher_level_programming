@@ -1,11 +1,13 @@
 #!/usr/bin/python3
-""" calculates and return the area of the rectangle
+
+"""
+This module calculates and return the area of the rectangle
 """
 
 '''
 File_name: 5-rectangle.py
 Created: 18-Nov-2023
-Author: Simeon-Azeh
+Author: Simeon-Azeh(Simeon-Azeh)
 Size: large
 Project: 0x08-python-more_classes
 Status: not yet submitted.

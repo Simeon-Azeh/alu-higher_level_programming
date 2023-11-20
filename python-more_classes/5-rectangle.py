@@ -1,13 +1,12 @@
 #!/usr/bin/python3
+""" calculates and return the area of the rectangle
 
-"""
-This module calculates and return the area of the rectangle
 """
 
 '''
 File_name: 5-rectangle.py
-Created: 18-Nov-2023
-Author: Simeon-Azeh(Simeon-Azeh)
+Created: 30-OCT-2023
+Author: Simeon Azeh (Simeon-azeh)
 Size: large
 Project: 0x08-python-more_classes
 Status: not yet submitted.
@@ -84,37 +83,37 @@ class Rectangle:
 
     def perimeter(self):
         """ Public instance method calculates and returns the perimeter...
-OA        of the rectangle.. if either the width or height is equal to 0,..
+        of the rectangle.. if either the width or height is equal to 0,..
         the perimeter is considered '0'. Otherwise, it calculates...
         the perimeter using the formula: 2 * (width + height).
         Again, it uses the private attributes '__width' and '__height'...
-OA        for the calculation..."""
+        for the calculation..."""
         if self.__width == 0 or self.__height == 0:
             return 0
-OA        return 2 * (self.__width + self.__height)
-OA
-OAOA    def __str__(self):
-OA        """ '__str__()' method overrides the default string representation...
-OAOA        ...of the object when using 'str(rectangle_instance)'....
-        it creates a string representation of the triangle using the '#'..."""
-OAOAOA        if self.__width == 0 or self.__height == 0:
-OAOA            return ""
-OAOA        rectangle_str = ""
-        for _ in range(self.__height):
-OAOA            """if either the width or height is equal to '0' or an empty....
-OAOAOA            string is returned.. It uses a 'Loop' to build the string...
-            representation by concatenating the appropriate number of '#'...
-OAOAOAOAOAOA            characters for each row.."""
-            rectangle_str += "#" * self.__width + "\n"
-OAOA        return rectangle_str[:-1]
+        return 2 * (self.__width + self.__height)
 
-OAOAOAOA    def __repr__(self):
+    def __str__(self):
+        """ '__str__()' method overrides the default string representation...
+        ...of the object when using 'str(rectangle_instance)'....
+        it creates a string representation of the triangle using the '#'..."""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        rectangle_str = ""
+        for _ in range(self.__height):
+            """if either the width or height is equal to '0' or an empty....
+            string is returned.. It uses a 'Loop' to build the string...
+            representation by concatenating the appropriate number of '#'...
+            characters for each row.."""
+            rectangle_str += "#" * self.__width + "\n"
+        return rectangle_str[:-1]
+
+    def __repr__(self):
         """This method returns a string representation of the object...
-OAOAOA        that can be used to recreate a new instance of the 'Rectangle class"""
+        that can be used to recreate a new instance of the 'Rectangle class"""
         return "Rectangle({}, {})".format(self.__width, self.__height)
-OAOAOAOA
+
     def __del__(self):
         """'__del__() method is called when an instance of the 'Rectangle'...
-OAOAOA        class is Deleted... Then it Prints  the Message...'Bye Rectangle'..
+        class is Deleted... Then it Prints  the Message...'Bye Rectangle'..
         ...to indicate that the instance is been Deleted."""
-OAOAOAOA        print("Bye rectangle...")
+        print("Bye rectangle...")

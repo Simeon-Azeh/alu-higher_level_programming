@@ -1,3 +1,3 @@
 #!/bin/bash
-# Send a GET request to the specified URL and display the body of the response
-[ "$#" -ne 1 ] && { echo "Direct access" >&2; exit 1; }; curl -s -w "\n" "$1"
+# script that takes in a URL, sends a GET request to the URL, and displays the body of the response# script that takes in a URL, sends a request to that URL, and displays the size of the body of the response
+curl -sL "$1"
